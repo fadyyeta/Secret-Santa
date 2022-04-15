@@ -1,6 +1,7 @@
-import { container } from "../../nextjs-material-kit.js";
+import { container, containerNoPadding } from "../../nextjs-material-kit.js";
 
 const signupPageStyle = {
+	containerNoPadding,
 	container: {
 		...container,
 		zIndex: "2",

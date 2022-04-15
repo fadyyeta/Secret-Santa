@@ -1,9 +1,10 @@
-import { container, title } from "../../nextjs-material-kit.js";
+import { container, containerNoPadding, title } from "../../nextjs-material-kit.js";
 
-import imagesStyle from "../styles/jss/nextjs-material-kit/imagesStyles.js";
+import imagesStyle from "../imagesStyles.js";
 
 const profilePageStyle = {
 	container,
+	containerNoPadding,
 	profile: {
 		textAlign: "center",
 		"& img": {

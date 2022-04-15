@@ -6,6 +6,10 @@ const landingPageStyle = {
 		color: "#FFFFFF",
 		...container,
 	},
+	containerFluid: {
+		padding: "0px",
+		width: "100%",
+	},
 	title: {
 		...title,
 		display: "inline-block",

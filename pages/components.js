@@ -36,7 +36,7 @@ export default function Components(props) {
 	const classes = useStyles();
 	const { ...rest } = props;
 	return (
-		<div>
+		<div className={classes.containerNoPadding}>
 			<Header
 				brand="NextJS Material Kit"
 				rightLinks={<HeaderLinks />}

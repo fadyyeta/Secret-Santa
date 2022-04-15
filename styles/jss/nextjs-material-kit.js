@@ -46,11 +46,16 @@ const transition = {
 };
 
 const containerFluid = {
-  paddingRight: "15px",
-  paddingLeft: "15px",
-  marginRight: "auto",
-  marginLeft: "auto",
-  width: "100%",
+	padding: "0 15px",
+	marginRight: "auto",
+	marginLeft: "auto",
+	width: "100%",
+};
+const containerNoPadding = {
+	padding: "0",
+	marginRight: "auto",
+	marginLeft: "auto",
+	width: "100%",
 };
 const container = {
   ...containerFluid,
@@ -234,6 +239,7 @@ export {
   transition,
   container,
   containerFluid,
+  containerNoPadding,
   boxShadow,
   card,
   defaultFont,

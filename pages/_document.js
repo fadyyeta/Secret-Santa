@@ -4,18 +4,14 @@ import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheets } from "@material-ui/core/styles";
 
 class MyDocument extends Document {
-  render() {
-    return (
+	render() {
+		return (
 			<Html lang="en">
 				<Head>
 					<meta charSet="utf-8" />
 					<meta name="theme-color" content="#000000" />
 					<link rel="shortcut icon" href="/img/favicon.png" />
-					<link
-						rel="apple-touch-icon"
-						sizes="76x76"
-						href="/img/apple-icon.png"
-					/>
+					<link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.png" />
 					{/* Fonts and icons */}
 					<link
 						rel="stylesheet"
@@ -34,7 +30,7 @@ class MyDocument extends Document {
 				</body>
 			</Html>
 		);
-  }
+	}
 }
 
 MyDocument.getInitialProps = async (ctx) => {

@@ -1,7 +1,8 @@
-import { container } from "../../nextjs-material-kit.js";
+import { container, containerNoPadding } from "../../nextjs-material-kit.js";
 
 const componentsStyle = {
 	container,
+	containerNoPadding,
 	brand: {
 		color: "#FFFFFF",
 		textAlign: "left",
