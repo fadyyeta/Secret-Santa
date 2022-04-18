@@ -22,7 +22,7 @@ const useStyles = makeStyles(styles);
 const Nav = (props) => {
     const classes = useStyles();
 	const { ...rest } = props;
-	let brandImg = <Image src="/img/logo.png" placeholder="asdasd" width="200" height="50" />;
+	let brandImg = <Image src="/img/logo.png" placeholder="asdasd" width="200" height="50" alt="logo" />;
 	return (
 		<div className={classes.containerNoPadding}>
 			<Header
