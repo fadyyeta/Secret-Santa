@@ -1,6 +1,9 @@
 .container {
   padding: 0 2rem;
 }
+.containerFluid {
+  padding: 0;
+}
 
 .main {
   min-height: 100vh;
@@ -8,8 +11,9 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  font-size: 1.25rem;
 }
 
 .footer {
