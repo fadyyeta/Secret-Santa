@@ -3,6 +3,7 @@ import navStyles from '../styles/Nav.module.css'
 import classNames from "classnames";
 // react components for routing our app without refresh
 import Link from "next/link";
+import Image from 'next/image'
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // @material-ui/icons
@@ -21,10 +22,11 @@ const useStyles = makeStyles(styles);
 const Nav = (props) => {
     const classes = useStyles();
 	const { ...rest } = props;
+	let brandImg = <Image src="/img/logo.png" placeholder="asdasd" width="200" height="50" />;
 	return (
 		<div className={classes.containerNoPadding}>
 			<Header
-				brand="NextJS Material Kit"
+				brand={brandImg}
 				rightLinks={<HeaderLinks />}
 				fixed
 				color="transparent"
