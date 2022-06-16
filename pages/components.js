@@ -38,7 +38,7 @@ export default function Components(props) {
 	return (
 		<div className={classes.containerNoPadding}>
 			<Header
-				brand="NextJS Material Kit"
+				brand=""
 				rightLinks={<HeaderLinks />}
 				fixed
 				color="transparent"
