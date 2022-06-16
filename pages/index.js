@@ -4,9 +4,10 @@ import Image from "next/image";
 import styles from "../styles/Layout.module.css";
 
 export default function Home({ title = "Home Page" }) {
+	const pageTitle = "Secret Santa" + (title ? " - " + title : "");
 	return (
 		<Fragment>
-			<title>Secret Santa{title ? " - " + title : ""}</title>
+			<title>{pageTitle}</title>
 			<div className={styles.container}>
 				<h1 className={styles.title}>
 					Welcome to <a href="https://nextjs.org">Next.js!</a>

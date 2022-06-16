@@ -37,32 +37,6 @@ export default function Components(props) {
 	const { ...rest } = props;
 	return (
 		<div className={classes.containerNoPadding}>
-			<Header
-				brand=""
-				rightLinks={<HeaderLinks />}
-				fixed
-				color="transparent"
-				changeColorOnScroll={{
-					height: 400,
-					color: "white",
-				}}
-				{...rest}
-			/>
-			<Parallax image="/img/nextjs_header.jpg">
-				<div className={classes.container}>
-					<GridContainer>
-						<GridItem>
-							<div className={classes.brand}>
-								<h1 className={classes.title}>NextJS Material Kit.</h1>
-								<h3 className={classes.subtitle}>
-									A Badass Material Kit based on Material-UI and NextJS.
-								</h3>
-							</div>
-						</GridItem>
-					</GridContainer>
-				</div>
-			</Parallax>
-
 			<div className={classNames(classes.main, classes.mainRaised)}>
 				<SectionBasics />
 				<SectionNavbars />
