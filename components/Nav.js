@@ -23,8 +23,12 @@ const Nav = (props) => {
     const classes = useStyles();
 	const { ...rest } = props;
 	let brandImg = <Image src="/img/logo.png" placeholder="asdasd" width="200" height="50" alt="logo" />;
+	let containerClasses =
+		classes.containerNoPadding + " " + !props.withParallax
+			? classes.containerNoParallax
+			: null;
 	return (
-		<div className={classes.containerNoPadding}>
+		<div className={containerClasses}>
 			<Header
 				brand={brandImg}
 				rightLinks={<HeaderLinks />}
@@ -36,20 +40,22 @@ const Nav = (props) => {
 				}}
 				{...rest}
 			/>
-			<Parallax image="/img/nextjs_header.jpg">
-				<div className={classes.container}>
-					<GridContainer>
-						<GridItem>
-							<div className={classes.brand}>
-								<h1 className={classes.title}>NextJS Material Kit.</h1>
-								<h3 className={classes.subtitle}>
-									A Badass Material Kit based on Material-UI and NextJS.
-								</h3>
-							</div>
-						</GridItem>
-					</GridContainer>
-				</div>
-			</Parallax>
+			{props.withParallax ? (
+				<Parallax image="/img/nextjs_header.jpg">
+					<div className={classes.container}>
+						<GridContainer>
+							<GridItem>
+								<div className={classes.brand}>
+									<h1 className={classes.title}>NextJS Material Kit.</h1>
+									<h3 className={classes.subtitle}>
+										A Badass Material Kit based on Material-UI and NextJS.
+									</h3>
+								</div>
+							</GridItem>
+						</GridContainer>
+					</div>
+				</Parallax>
+			) : null}
 		</div>
 	);
 }
