@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
 // react components for routing our app without refresh
@@ -32,9 +32,12 @@ import styles from "../styles/jss/nextjs-material-kit/pages/components.js";
 
 const useStyles = makeStyles(styles);
 
-export default function Components(props) {
+export default function Components(props ) {
 	const classes = useStyles();
 	const { ...rest } = props;
+	useEffect(() => {
+		props.getLayoutOptions({ withParallax: true });
+	}, []);
 	return (
 		<div className={classes.containerNoPadding}>
 			<div className={classNames(classes.main, classes.mainRaised)}>
