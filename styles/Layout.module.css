@@ -1,12 +1,17 @@
 .container {
   padding: 0 2rem;
 }
+
 .containerFluid {
   padding: 0;
 }
 
+.containerNoParallax{
+  margin-top: 100px;
+}
+
 .main {
-  min-height: 100vh;
+  min-height: calc(100vh - 200px );
   /* padding: 4rem 0; */
   flex: 1;
   display: flex;
