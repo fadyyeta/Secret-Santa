@@ -8,7 +8,7 @@ import styles from "../styles/Layout.module.css";
 export default function Home({ title = "Home Page", getLayoutOptions }) {
 	useEffect(() => {
 		getLayoutOptions({ withParallax: true });
-	}, []);
+	}, [getLayoutOptions]);
 	const pageTitle = "Secret Santa" + (title ? " - " + title : "");
 	// let props = getStaticProps(Layout);
 	return (

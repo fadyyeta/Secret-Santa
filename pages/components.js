@@ -37,7 +37,7 @@ export default function Components(props ) {
 	const { ...rest } = props;
 	useEffect(() => {
 		props.getLayoutOptions({ withParallax: true });
-	}, []);
+	}, [props]);
 	return (
 		<div className={classes.containerNoPadding}>
 			<div className={classNames(classes.main, classes.mainRaised)}>

@@ -10,10 +10,10 @@ const Layout = ({ children, props }) => {
 	let containerClass = useRef(styles.main);
 	useEffect(() => {
 		setLayoutOptions({ withParallax: props.withParallax });
-	containerClass.current += layoutOptions.withParallax
-		? ""
-		: " " + styles.containerNoParallax;
-	}, []);
+		containerClass.current += layoutOptions.withParallax
+			? ""
+			: " " + styles.containerNoParallax;
+	}, [layoutOptions.withParallax, props.withParallax]);
 	return (
 		<Fragment>
 			<Nav withParallax={layoutOptions.withParallax} {...props} />
